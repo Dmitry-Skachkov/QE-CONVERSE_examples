@@ -22,5 +22,6 @@ Install Quantum Espresso
 
 Install QE-CONVERSE
 ```
-./configure --with-qe-source=~/qe-7.5
+> ./configure --with-qe-source=~/qe-7.5
+> make
 ```
