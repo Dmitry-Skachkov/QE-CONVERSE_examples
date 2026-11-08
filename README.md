@@ -1,11 +1,11 @@
 # Installation on STOKES
 
+Load modules
 ```
 > module load scalapack/scalapack-2.2.3-openmpi-4.1.5-gcc-12.2.0
-```
 
-module list
-```
+> module list
+
 1) gcc/gcc-12.2.0
 2) hpcx/hpcx-2.25.1
 3) openmpi/openmpi-4.1.5-gcc-12.2.0
@@ -20,3 +20,7 @@ Install Quantum Espresso
 >
 ```
 
+Install QE-CONVERSE
+```
+./configure --with-qe-source=~/qe-7.5
+```
