@@ -53,3 +53,9 @@ Install Quantum Espresso
 > ./configure --with-scalapack=yes
 > make all
 ```
+
+Install QE-CONVERSE
+```
+> ./configure --with-qe-source=~/qe-7.5_ScaLapack
+> make
+```
