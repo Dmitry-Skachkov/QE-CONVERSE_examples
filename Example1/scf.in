@@ -16,14 +16,11 @@
   nat = 215
   ntyp = 4
   ecutwfc = 40.0
-!  ecutrho = 320.0
-!  occupations = 'fixed'
   occupations = 'smearing' 
   smearing = 'mv'
   degauss = 0.0002
   nspin = 2
   tot_charge = -1
-!  tot_magnetization = 1
   starting_magnetization(1) =  0.0
   starting_magnetization(2) =  0.5
   starting_magnetization(3) = -0.5
@@ -31,7 +28,6 @@
   input_dft='pbe'
   nosym = .true.
   noinv = .true.
-!  nbnd = 517
 /
 &ELECTRONS
     conv_thr = 1.0d-8
