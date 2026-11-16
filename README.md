@@ -63,7 +63,7 @@ Install QE-CONVERSE
 
 # The code is modified
 
-src/newscf.f90 (SCF inside QE-CONVERSE):
+[src/newscf.f90](https://github.com/Dmitry-Skachkov/QE-CONVERSE/blob/main/src/newscf.f90) (SCF inside QE-CONVERSE):
 ```
 starting_pot='file': the SCF starts from the converged pw.x density instead of the atomic one.
 imix=2: local-TF mixing instead of plain.
