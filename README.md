@@ -70,7 +70,7 @@ imix=2: local-TF mixing instead of plain.
 nmix=12, niter=300 (were 8 and 100).
 ```
 
-src/calc_orbital_magnetization.f90 (calc_g_tensor):
+[src/calc_orbital_magnetization.f90](https://github.com/Dmitry-Skachkov/QE-CONVERSE/blob/main/src/calc_orbital_magnetization.f90) (calc_g_tensor):
 ```
 The number of unpaired electrons (unp_ele) is now taken from the occupations (sum of wg, spin up minus spin down), not from nint(tot_magnetization). Without tot_magnetization (smearing runs), the old code divided Δg by −10000.
 If tot_magnetization is set, the old integer value is kept.
