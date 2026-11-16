@@ -5,27 +5,18 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=128
 #SBATCH --cpus-per-task=1
-#SBATCH --job-name WTB
+#SBATCH --job-name QE-CONVERSE
 #SBATCH -t 1:00:00  
 
 PPN=128
-#QE=/home/x-dskachkov/bin/qe_GCC
 QE=/home/x-dskachkov/bin/qe_amd_scalapack
 module load aocc/3.1.0
 module load openmpi/4.0.6
 module load amdscalapack/3.0
 
 ### Quantum Espresso SCF:
-#mpirun -np $PPN $QE/pw.x < scf.in   > scf.out
 mpirun -np $PPN $QE/pw.x < scf6.in  > scf6.out
-#mpirun -np $PPN $QE/pw.x < nscf.in  > nscf.out
 
-### Quantum Espresso Band structure:
-#mpirun -ppn $PPN pw.x -ni 1 -nk 12 -nt 1 -nd 1 -nb 1 < bands.in > bands.out
-#mpirun -ppn $PPN bands.x < bandsx.in > bandsx.out
-
-### Quantum Espresso orbital projectors:
-#mpirun -ppn $PPN projwfc.x < projwfc.in > projwfc.out
 
 
 
